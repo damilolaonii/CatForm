@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cat photo app</title>
+</head>
+<body>
+  <main>
+<!--This section contains a link to the cats images, lists of the things cats love and hate  in addition to images with captions-->
+<section>
+    <h1>Cat Photo App</h1>
+    <h2>Cat Photos</h2>
+    <P>Click here to view more <a href="https://www.pexels.com/search/cat/">cat photos.</a></P>
+    <a href="https://www.pexels.com/search/cat/"> <img src="Cat Images/catty.jpg" style="width:300px;height:200px" alt="a white cat"></a>
+
+
+    <h2>Cat Lists</h2>
+    <h3>Things cats love:</h3>
+    <ul>
+        <li>cat nip</li>
+        <li>laser pointers</li>
+        <li>lasagna</li>
+    </ul>
+    <figure>
+        <img src="Cat Images/pexels-alleksana-5949893.jpg" style="width:300px;height:200px">
+        <figcaption>cats <em>love</em> lasagna</figcaption>
+  </figure>
+
+    <h3>Things cats hate:</h3>
+    <ol>
+        <li>flea treatment</li>
+        <li>thunder</li>
+        <li>other cats</li>
+    </ol>
+    <figure>
+        <img src="Cat Images/pexels-pixabay-45170.jpg" style="width:300px;height:200px">
+        <figcaption>cats <bold>hate</bold> other cats</figcaption>
+    </figure>
+</section>
+
+<!--This section is a form  displaying the use of some form elemnts -->
+<section>
+    <form action="CatFormAnswers.html" autocomplete="on">
+        <fieldset>
+            <legend>Is your cat an indoor or outdoor cat?</legend>
+        <label><input type="radio" checked id="indoor" name="indoor-outdoor" value="indoor">Indoors</label>
+        <label><input type="radio" id="outdoor" name="indoor-outdoor" value="outdoor">Outdoors</label>
+        <br>  <br>  
+            <legend>What's your cat's personality?</legend>
+            <input type="checkbox" checked id="loving" name="personality" value="loving">> <label for="loving">Loving</label>
+            <input type="checkbox" id="lazy" name="personality" value="lazy">> <label for="lazy">Lazy</label>
+            <input type="checkbox" id="energetic" name="personality" value="energetic"> <label for="energetic">Energetic</label>
+        <br>  <br>  
+            <legend>What phone do you want?</legend>
+            <select id="phones" name="phones">
+            <option value="iphone">Iphone</option>
+            <option value="tecno">Tecno</option>
+            <option value="motorola">Motorola</option>
+            <option value="samsung">Samsung</option>
+            </select> <br><br>
+
+
+            <label for="CAtPhotoUrl">Enter the link to display your cat</label><br>
+            <input type="text" id="CAtPhotoUrl" placeholder="CatPhotoUrl" name="CatPhotoUrl" required> <br><br> 
+            <label for ="catfile">Upload a photo of your cat</label><br>
+            <input type="file" id="catfile" name="catfile"><br>
+            <label for="favcolor">What colour of Cat would you like?</label><br>
+            <input type="color" id="favcolor"name="favcolor"> <br><br>  
+            <label for="catday">Enter your cats birthday</label> <br>  
+            <input type="date" id="catday" name="catday" max="2022-6-27"><br> <br>  
+            <input type="image" src="Cat Images\green arrow.png" style="width:50px;height:50px" alt="submit"> <br>
+    </form>
+    </section>
+    <hr>
+
+<!--This section contains a table--> 
+<section>
+    <table>
+        <tr>
+            <th>Owner Name</th>
+            <th>Cat Specie</th>
+            <th>Cat colour</th>
+            <th>Behavior</th>
+        </tr>
+            
+        <tr>
+            <td>Damilola Onitiju</td>
+            <td>Persian Cat</td>
+            <td>White</td>
+            <td>Meek</td>
+        </tr>
+
+        <tr>
+            <td>Okpala Gloria</td>
+            <td>Maine Coon</td>
+            <td>Grey-Beige</td>
+            <td>Aggressive</td>
+        </tr>
+        <td>Uzoma Precious</td>
+        <td>British Shorthair</td>
+        <td>Black</td>
+        <td>Feral</td>
+    </table>
+
+</section>
+  </main>
+
+  <footer>No Copyright - <a href="freeCodeCamp.org">freeCodeCamp.org</a>
+  </footer>
+
+</body>
+</html>
